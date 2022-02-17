@@ -1,0 +1,42 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #FAFAFA;
+  height: 100%;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 100%;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-page-dots {
+  bottom: 10px;
+}
